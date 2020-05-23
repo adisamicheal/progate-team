@@ -59,6 +59,7 @@ button {
   letter-spacing: 0.03em;
   color: #8d96bd;
   margin-top: 28px;
+  max-width: 582px;
 }
 .inner-content img {
   margin-top: -25px;

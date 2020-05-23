@@ -29,6 +29,7 @@
   }
   .resources {
     padding: 0;
+    padding-top: 20px;
   }
   .slide {
     grid-template-columns: 1fr;
