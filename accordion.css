@@ -1,0 +1,111 @@
+[name="accordion-group"] {
+  display: none;
+}
+.element-list {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.accordion-group {
+  max-width: 743px;
+  display: block;
+  margin: auto;
+}
+.accordion-group label {
+  /*misc*/
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #8e96b7;
+}
+.accordion-group li {
+  margin-bottom: 32px;
+}
+.accordion-toggle:before {
+  /*IE8*/
+  content: url(images/icons/down.png) !important;
+  margin-right: 24px;
+}
+.accordion-toggle::before {
+  content: url(images/icons/down.png) !important;
+  margin-right: 24px;
+}
+[name="accordion-group"] ~ .accordion-h .accordion-toggle {
+  display: block;
+}
+[name="accordion-group"]:checked ~ .accordion-h .accordion-toggle {
+  display: none;
+}
+.accordion-dismiss:before {
+  /*IE8*/
+  content: url(images/icons/up.png) !important;
+  margin-right: 24px;
+}
+.accordion-dismiss::before {
+  content: url(images/icons/up.png) !important;
+  margin-right: 24px;
+}
+[name="accordion-group"] ~ h4 .accordion-dismiss {
+  display: none;
+}
+[name="accordion-group"]:checked ~ h4 .accordion-dismiss {
+  display: block;
+}
+.accordion-body {
+  /*box model*/
+  height: auto;
+  max-height: 0;
+  /*layout*/
+  overflow: hidden;
+  /*backgrounds &amp; borders*/
+  background-color: hsla(0, 0%, 100%, 0.25);
+  /*transition*/
+  -webkit-transition: max-height 0.2s ease 0s;
+  transition: max-height 0.25s ease 0s;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 10px 50px;
+}
+.accordion-body span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: #8d96bd;
+}
+.accordion-body button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #7382a3;
+  background: #e8ecf4;
+  border-radius: 2px;
+  padding: 10px 20px;
+  align-self: self-end;
+}
+.accordion-group li:last-child .accordion-body {
+  border-bottom-width: 1;
+}
+[name="accordion-group"]:checked ~ .accordion-body {
+  /*box model*/
+  max-height: 660px;
+  /*transition*/
+  transition-duration: 0.75s;
+}
+.accordion-inner {
+  padding: 0.631100639515315em 2%; /*15/11.884/2*/
+}
+
+@media screen and (max-width: 768px) {
+  .accordion-body {
+    grid-template-columns: 1fr;
+  }
+}

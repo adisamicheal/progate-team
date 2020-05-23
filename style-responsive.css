@@ -1,0 +1,91 @@
+/* responsivness styling for body page with ,edia query */
+@media screen and (max-width: 768px) {
+  .sponsors {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .sponsors img {
+    margin-bottom: 20px;
+  }
+  .plan {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .plan-text {
+    width: 100%;
+    text-align: center;
+  }
+  .plan-img {
+    width: 100%;
+  }
+  .about {
+    padding: 30px 10px;
+  }
+  .flex-icons {
+    grid-template-columns: 1fr 1fr;
+  }
+  .statistics {
+    grid-template-columns: 1fr;
+  }
+  .resources {
+    padding: 0;
+  }
+  .slide {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .slide-text {
+    text-align: center;
+  }
+  .testimonials {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+  .testimonials h4,
+  h2,
+  h6 {
+    text-align: center;
+  }
+  .comment {
+    padding: 30px 20px;
+  }
+  .faq {
+    padding: 20px;
+  }
+  .signup {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+  .signup form {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sponsors {
+    padding: 58px 100px;
+  }
+  .plan {
+    padding: 170px 48px 0 100px;
+  }
+  .about {
+    padding: 100px 150px;
+  }
+  .resources {
+    padding: 0;
+  }
+  .testimonials {
+    padding: 50px;
+  }
+  .faq {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about {
+    padding: 20px 0;
+  }
+  .plan {
+    padding: 20px;
+  }
+}

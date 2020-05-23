@@ -1,0 +1,64 @@
+/* remove default DOM css */
+
+/* header styles */
+.nav {
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px 117px;
+}
+header li {
+  list-style: none;
+}
+.header-left ul,
+.header-right {
+  display: flex;
+}
+.header-left > ul > li > img {
+  margin-right: 70px;
+}
+.header-left > ul > li > a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  color: #697ca6;
+  text-shadow: 0px 0px 5px #e6e6e6;
+  margin-right: 40px;
+}
+.header-left > ul > li > a:hover,
+.header-left > ul > li > a:active {
+  color: #5e81fe;
+  text-shadow: 0px 0px 5px #e6e6e6;
+}
+.header-right ul {
+  display: flex;
+  align-items: center;
+}
+.header-right > ul > li {
+  margin-left: 34px;
+}
+.header-right button {
+  background: #d2e1ff;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  color: #3a79ff;
+  padding: 15px 20px;
+  margin-left: 44px;
+  border: 1px solid #d2e1ff;
+  cursor: pointer;
+}
+.header-right button:hover {
+  color: #d2e1ff;
+  background-color: #3a79ff;
+  border: 1px solid #3a79ff;
+  transition: all ease-in-out 500ms;
+}

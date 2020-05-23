@@ -1,0 +1,88 @@
+@media screen and (max-width: 768px) {
+  header {
+    display: none;
+  }
+  .nav {
+    display: block;
+    padding: 20px;
+  }
+  .nav > #nav-check {
+    display: none;
+  }
+
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: #f5f8ff;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #5e81fe;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #f5f8ff;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    z-index: 1;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4c85ff;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+  .nav-icons ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 30px;
+  }
+  .nav-links button {
+    background: #d2e1ff;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    color: #3a79ff;
+    padding: 10px 20px;
+    margin-left: 44px;
+    border: 1px solid #d2e1ff;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 50px;
+  }
+}
