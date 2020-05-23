@@ -127,6 +127,7 @@ button {
 }
 .plan .btn-1 {
   background: #4c85ff;
+  border: 1px solid #4c85ff;
   box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
   border-radius: 2px;
   font-style: normal;
@@ -134,6 +135,12 @@ button {
   font-size: 13px;
   line-height: 16px;
   color: #ffffff;
+}
+.plan .btn-1:hover {
+  background: #ffffff;
+  color: #4d6ce1;
+  border: 1px solid #4d6ce1;
+  transition: all ease-in-out 500ms;
 }
 .plan .btn-1 > svg {
   margin-left: 15px;
@@ -362,6 +369,7 @@ button {
 }
 .blog-buttons > .read {
   background: #d2e1ff;
+  border: 1px solid #d2e1ff;
   border-radius: 2px;
   font-style: normal;
   font-weight: bold;
@@ -370,6 +378,12 @@ button {
   color: #3a79ff;
   padding: 10px 15px;
   margin-right: 8px;
+}
+.blog-buttons .read:hover {
+  background: #3a79ff;
+  color: #d2e1ff;
+  border: 1px solid #3a79ff;
+  transition: all ease-in-out 500ms;
 }
 .blog-buttons > .add {
   background: #ffffff;
@@ -501,6 +515,7 @@ button {
 }
 .started .view {
   background: #ffffff;
+  border: 1px solid #ffffff;
   box-shadow: 0px 5px 15px #6480e8;
   border-radius: 2px;
   font-style: normal;
@@ -509,6 +524,12 @@ button {
   line-height: 16px;
   color: #565f82;
   padding: 15px 25px;
+}
+.started .view:hover {
+  background: #6480e8;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: all ease-in-out 500ms;
 }
 .started .read {
   border: 1px solid #a0b4ff;
@@ -569,6 +590,7 @@ button {
 }
 .signup button {
   background: #4d6ce1;
+  border: 1 px solid #4d6ce1;
   box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
   border-radius: 5px;
   font-style: normal;
@@ -578,4 +600,10 @@ button {
   color: #ffffff;
   height: 59px;
   width: 40%;
+}
+.signup button:hover {
+  background: #ffffff;
+  color: #4d6ce1;
+  border: 1px solid #ffffff;
+  transition: all ease-in-out 500ms;
 }
