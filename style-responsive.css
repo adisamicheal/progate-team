@@ -61,7 +61,11 @@
     margin-top: 20px;
   }
 }
-
+@media (width: 1024px) {
+  .testimonials {
+    padding: 50px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .sponsors {
     padding: 58px 100px;
